@@ -13,11 +13,13 @@
 }
 
 html {
-  scroll-behavior: smooth; /* When navigation links are clicked, the browser will scroll smoothly. */
+  scroll-behavior: smooth;
+    /* When navigation links are clicked, the browser will scroll smoothly. */
 }
 
 body {
-  font-family: 'Quicksand', sans-serif; /*The browser will use our font in quotes, but if the browsers can't recieve the font it wil use sans-serif as a fallback*/
+  font-family: 'Quicksand', sans-serif;
+    /*The browser will use our font in quotes, but if the browsers can't recieve the font it wil use sans-serif as a fallback*/
   margin: 60px 0px 100px 0px;
   color: aliceblue;
   background-color: rgb(12, 12, 12);
@@ -28,7 +30,8 @@ body {
 /* Start of Navigation Styles. */
 
 nav {
-  position: fixed; /* Create a fixed navigation on the rightside of the screen. */
+  position: fixed;
+    /* Create a fixed navigation on the rightside of the screen. */
   width: 250px;
   top: 30px;
   left: 30px;
@@ -102,7 +105,8 @@ header,
   text-align: justify;
   max-width: 900px;
   padding: 0 2rem;
-  margin: 0 auto; /* Center the container elements, and automatically keep itmes centered in viewport. */
+  margin: 0 auto;
+    /* Center the container elements, and automatically keep itmes centered in viewport. */
 }
 
 /* End Container Styles Start */
@@ -112,7 +116,8 @@ header,
 section img,
 img,
 #map {
-  max-width: 100%; /* Set the images with a max-width of 100% */
+  max-width: 100%;
+    /* Set the images with a max-width of 100% */
   height: auto;
   text-align: center;
   border-radius: 10px;
@@ -164,28 +169,44 @@ cite a:hover {
 /* Start of Scroll to Top Button Styles */
 
 .scroll-button {
-  padding: 15px 40px 15px 40px;
-  background-color: rgb(247, 247, 247);
-  color: rgb(0, 0, 0);
-  position: fixed; /* Fixed button at the bottom right. */
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: rgb(17, 17, 17);
+  color: #dfdfdf;
+  position: fixed;
+  /* Fixed button at the bottom right. */
   right: 65px;
   bottom: 20px;
-  border-radius: 10px;
   font-weight: 600;
 }
 
 .scroll-button:hover {
-  background-color: rgb(17, 17, 17);
-  color: blanchedalmond;
+  background-color: rgb(226, 226, 226);
+  color: rgb(17, 17, 17);
   cursor: pointer;
   transition: 0.3s;
 }
 
 @media screen and (max-width: 820px) {
   .scroll-button {
-    right: 10px;
+    right: 30px;
     bottom: 80px;
   }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-align: center;
+  }
+
+  body {
+    text-align: center;
+  }
+
 }
 
 /* End of Scroll to Top Button Styles */
